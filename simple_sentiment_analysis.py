@@ -1,3 +1,5 @@
+import os
+os.environ['OMP_NUM_THREADS'] = '1'  # 解决TLS内存分配问题
 import json
 from transformers import pipeline
 import matplotlib.pyplot as plt
